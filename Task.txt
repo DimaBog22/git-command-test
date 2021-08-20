@@ -1,0 +1,32 @@
+Создать бранч с именем develop
+1. git checkout -b develop
+2. git add .
+3. git push origin develop
+Создать бранч с именем task_1
+1. git checkout -b task_1
+2. git add .
+3. git push origin task_1
+В бранче task_1 создать новый текстовый файл с именем “description”,
+Добавить в файл произвольный текст 
+Выполнить commit
+Выполнить push
+1.echo "Put any content here" >> description.txt
+2.git add description.txt
+3.git commit -m "Add description.txt"
+4.git push origin task_1
+Изменить текст в файле
+Выполнить commit
+Выполнить push
+1. open description.txt and added text "// added new text" manualy
+2.git add description.txt
+3.git commit -m "Add new text into description.txt"
+4.git push origin task_1
+Перейти в бранч develop
+1. git checkout develop
+Смержить бранч task_1 в бранч develop
+1. git merge task_1 
+Выполнить push в develop
+1. git push origin develop
+Удалить локальный и удаленный бранч task_1
+1. git branch -d task_1 (удалить локальную ветвь)
+2. git push origin --delete task_1 (удалить удалённую ветку)
